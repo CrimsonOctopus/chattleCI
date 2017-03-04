@@ -22,7 +22,7 @@ class Message (db.Model):
         return'<Message text: %s>' % self.text
         
 class UserProfile (db.Model):
-    id = db.Column(db.Integer,primary_key=True) # key
+    id = db.Column(db.Integer,primary_key=True) # git key
     username = db.Column(db.String(120))
     picture = db.Column(db.String(200))
     
