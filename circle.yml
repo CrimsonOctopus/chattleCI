@@ -1,8 +1,8 @@
 test:
     override:
-        - python -m test/unit_tests
+        - python -m tests/unit_tests
 deployment:
     production:
         branch: master
         heroku:
-            appname: ancient-falls-24588
+            appname: chattlev2
