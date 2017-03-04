@@ -33,9 +33,6 @@ class ChatBotResponseTest(unittest.TestCase):
     def test_messages(self):
         messages = app.getMessages()
         self.assertNotEqual(messages,None)
-    def test_users(self):
-        users = app.getUsers()
-        self.assertNotEqual(users,None)
     def test_invalid_user(self):
         i = app.getUserIndex("TestUser")
         self.assertLess(i,0)
