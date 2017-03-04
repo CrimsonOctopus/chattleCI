@@ -9,7 +9,7 @@ class SocketIOTest(unittest.TestCase):
         r = client.get_received()
         # print r
         self.assertEquals(len(r), 1)
-        from_server = r[1]
+        from_server = r[0]
         self.assertEquals(
             from_server['name'],
             'all messages'
@@ -22,7 +22,7 @@ class SocketIOTest(unittest.TestCase):
         r = client.get_received()
         # print r
         #self.assertEquals(len(r), 2)
-        from_server = r[1]
+        from_server = r[0]
         self.assertEquals( from_server['name'], 'all messages' )
         data = from_server['args'][0]
         self.assertEquals( data['messages'], None )
@@ -32,7 +32,7 @@ class SocketIOTest(unittest.TestCase):
         r = client.get_received()
         # print r
         #self.assertEquals(len(r), 2)
-        from_server = r[1]
+        from_server = r[0]
         self.assertEquals( from_server['name'], 'user quit' )
         data = from_server['args'][0]
         self.assertEquals( data['service'], 'Google' )
@@ -43,10 +43,10 @@ class SocketIOTest(unittest.TestCase):
         r = client.get_received()
         # print r
         #self.assertEquals(len(r), 2)
-        from_server = r[1]
+        from_server = r[0]
         self.assertEquals(
             from_server['name'],
-            'all messages'
+            'all users'
         )
         data = from_server['args'][0]
         self.assertNotEquals( data['usernames'], None )
