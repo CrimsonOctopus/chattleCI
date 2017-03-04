@@ -371,17 +371,6 @@ def getMessages():
     
     return None
     
-#Get all previous messages from the database
-def getUsers():
-    #Query for all Message models
-    usersQuery = models.UserProfile.query.all()
-    #Convert the query in to an array of strings
-    all_users = [];
-    for i in range(0,len(usersQuery)):
-        user = {'text':usersQuery[i].username}
-        all_users.append(json.dumps(user))
-    return all_users #mssgs
-    
 def getUserIndex(username):
     print "Searching for user "+username
     index = -1
