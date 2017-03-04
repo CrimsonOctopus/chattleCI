@@ -33,10 +33,10 @@ def index():
 def about():
     return "About this app: Not much to say"
 @socketio.on('connect') 
-def on_connect():
+"""def on_connect():
     socketio.emit('client connected', {
         'message': 'connected'
-})
+})"""
 #On socketio connect... (When a client connects...)
 #TODO: Authenticate before showing messages
 @socketio.on('user connected') 
