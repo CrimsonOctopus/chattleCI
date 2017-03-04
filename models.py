@@ -1,7 +1,7 @@
 import os
 import flask_sqlalchemy, app
 
-app.app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('HEROKU_POSTGRESQL_JADE_URL')
+app.app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
 db = flask_sqlalchemy.SQLAlchemy(app.app)
 
 class Message (db.Model):
