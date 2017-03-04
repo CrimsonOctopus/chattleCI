@@ -8,7 +8,7 @@ class SocketIOTest(unittest.TestCase):
         client.emit('new message', {'facebook_user_token':'','google_user_token':'','message':{'text': "Some text"}})
         r = client.get_received()
         # print r
-        self.assertEquals(len(r), 2)
+        self.assertEquals(len(r), 1)
         from_server = r[1]
         self.assertEquals(
             from_server['name'],
@@ -46,7 +46,7 @@ class SocketIOTest(unittest.TestCase):
         from_server = r[1]
         self.assertEquals(
             from_server['name'],
-            'all users'
+            'all messages'
         )
         data = from_server['args'][0]
         self.assertNotEquals( data['usernames'], None )
