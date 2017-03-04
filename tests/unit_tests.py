@@ -3,7 +3,7 @@ import app
 import json
 
 class ChatBotResponseTest(unittest.TestCase):
-    def test_not_command(self):
+    """def test_not_command(self):
         response = app.parseWithChatty("TestUser" + ",.," + '!! Potato',"")
         self.assertEquals(response, None)
     def test_is_command(self):
@@ -29,7 +29,7 @@ class ChatBotResponseTest(unittest.TestCase):
         self.assertEquals(response["text"], "Welcome TestUser! Type !!help for a list of commands!")
     def test_exit_command(self):
         response = app.parseWithChatty("TestUser" + ",.," + '<< TestUser',"")
-        self.assertEquals(response["text"], "Everyone say goodbye to TestUser!")
+        self.assertEquals(response["text"], "Everyone say goodbye to TestUser!")"""
     def test_messages(self):
         messages = app.getMessages()
         self.assertNotEqual(messages,None)
