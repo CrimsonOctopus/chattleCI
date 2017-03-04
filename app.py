@@ -21,7 +21,7 @@ messages = []
 users = []
 
 #API Keys/Secrets
-google_api_key = os.getenv("GOOGLE_API_KEY")
+google_api_key = 'AIzaSyBShyKXk2nq3PgUF4Wid6KieaeCrm6C_mM'#os.getenv("GOOGLE_API_KEY")
 #apisecret = os.getenv("IMAGES_API_SECRET")
 
 #index endpoint
