@@ -21,7 +21,7 @@ messages = []
 users = []
 
 #API Keys/Secrets
-google_api_key = os.getenv("GOOGLE_API_KEY")
+google_api_key = 'AIzaSyBShyKXk2nq3PgUF4Wid6KieaeCrm6C_mM'#os.getenv("GOOGLE_API_KEY")
 #apisecret = os.getenv("IMAGES_API_SECRET")
 
 #index endpoint
@@ -61,7 +61,7 @@ def on_user_connect(data):
         #Send the username up with the message marker >>
         serverMessage = parseWithChatty(user['text'] + ",.," + ">> "+text,"")
         #If the message had markers (It did), append the server message to the message list
-        if serverMessage is not None:
+        if messages is not None and serverMessage is not None:
             messages.append(json.dumps(serverMessage))
             
         #Emit the new list of messages to all the clients
