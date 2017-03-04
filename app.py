@@ -32,8 +32,8 @@ def index():
 @app.route('/about')
 def about():
     return "About this app: Not much to say"
-@socketio.on('connect') 
-"""def on_connect():
+"""@socketio.on('connect') 
+def on_connect():
     socketio.emit('client connected', {
         'message': 'connected'
 })"""
