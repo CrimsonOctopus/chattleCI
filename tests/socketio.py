@@ -3,7 +3,7 @@ import app
 import json
 
 class SocketIOTest(unittest.TestCase):
-    """def test_connect(self):
+    def test_connect(self):
         client = app.socketio.test_client(app.app)
         r = client.get_received()
         # print r
@@ -58,7 +58,7 @@ class SocketIOTest(unittest.TestCase):
             'all users'
         )
         data = from_server['args'][0]
-        self.assertNotEquals( data['usernames'], None )"""
+        self.assertNotEquals( data['usernames'], None )
 
 if __name__ == '__main__':
     unittest.main()
