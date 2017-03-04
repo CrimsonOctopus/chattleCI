@@ -13,9 +13,6 @@ import xml.etree.ElementTree as ET
 app = flask.Flask(__name__)
 import models
 
-reload(sys)
-sys.setdefaultencoding('utf-8')
-
 #Get the flask_socketio socket
 socketio = flask_socketio.SocketIO(app)
 
