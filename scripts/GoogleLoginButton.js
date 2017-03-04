@@ -71,7 +71,7 @@ extends React.Component {
           });*/
           
           //Check user credentials (Use OAuth?)
-          Socket.on('client connected',function(){
+          /*Socket.on('client connected',function(){
               console.log('Connecting to the server with Google!');
               var auth = gapi.auth2.getAuthInstance();
               let user=auth.currentUser.get();
@@ -81,7 +81,7 @@ extends React.Component {
                       Socket.emit('user connected', {'facebook_user_token':'','google_user_token':user.getAuthResponse().access_token,'username':user.name});
                     });
               }
-          })
+          })*/
     }
     
     /*onSignIn(){
