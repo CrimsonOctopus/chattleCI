@@ -1,0 +1,102 @@
+body{
+    background: url('landscape.png') no-repeat;
+    background-size: 125% 110%
+}
+#page-wrap {
+    height: 90%;
+    width: 65%;
+    margin: 50px 5px; 
+    padding: 5px;
+    -moz-box-shadow: 0 0 20px black; 
+    -webkit-box-shadow: 0 0 20px black;
+    background:  white;
+    opacity: 1.0;
+    box-shadow: 0 0 20px black;
+    overflow: auto;
+    border-radius: 8px;
+    display:inline-block;
+}
+.profilePicture{
+    height:40px;
+    width:40px;
+}
+.username{
+    font-size:12px;
+}
+.messageText{
+    font-size:14px;
+    margin:0px;
+    vertical-align: middle;
+}
+
+.messageImage{
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+}
+.messageItem{
+    background:#AAA;
+    margin:10px;
+}
+.bot_messageItem{
+    background:#FFA;
+    margin:10px;
+}
+#nav{
+    width: 985px;
+    height: 50px;
+    margin: 5px 13px;
+    font-size: 20px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 2px 3px #333333;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    position: absolute; 
+    -moz-box-shadow: 0 0 20px black; 
+    -webkit-box-shadow: 0 0 20px black; 
+    top: 0; 
+    left: 0;
+}
+.icon {
+      background: url('g-logo.png') transparent no-repeat;
+      background-size: 12px 12px;
+      margin: 5px 5px 5px 0px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 12px;
+      height: 12px;
+    }
+
+#customBtn {
+      display: inline-block;
+      background: white;
+      color: #000;
+      width: 75px;
+      border-radius: 5px;
+      border: thin solid #888;
+      box-shadow: 5px 5px 5px black;
+      white-space: nowrap;
+    }
+ul {
+    list-style-type:none;
+    margin:0px;
+}
+h4 {
+    text-align:center;
+}
+#userlist{
+    height: 90%;
+    width: 20%;
+    margin: 50px 5px; 
+    padding: 5px; 
+    border-radius: 8px;
+    background: white; 
+    -moz-box-shadow: 0 0 20px black; 
+    -webkit-box-shadow: 0 0 20px black; 
+    box-shadow: 0 0 20px black;
+    overflow: auto;
+    display:inline-block;
+}
