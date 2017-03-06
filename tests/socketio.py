@@ -3,7 +3,7 @@ import app
 import json
 
 class SocketIOTest(unittest.TestCase):
-    """def test_no_token_message(self):
+    def test_no_token_message(self):
         client = app.socketio.test_client(app.app)
         client.emit('new message', {'facebook_user_token':'','google_user_token':'','message':{'text': "Some text"}})
         r = client.get_received()
@@ -52,4 +52,4 @@ class SocketIOTest(unittest.TestCase):
         self.assertNotEquals( data['usernames'], None )
 
 if __name__ == '__main__':
-    unittest.main()"""
+    unittest.main()
