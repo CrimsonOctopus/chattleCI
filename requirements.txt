@@ -1,6 +1,7 @@
 Flask==0.12
-flask-socketio
+flask-socketio==2.8.2
 requests==2.13.0
 flask_sqlalchemy==2.1
-flask_testing
+flask_testing==0.6.2
 psycopg2==2.6.2
+SQLAlchemy==1.1.5
