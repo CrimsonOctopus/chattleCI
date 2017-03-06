@@ -3,4 +3,5 @@ flask-socketio
 requests
 flask_sqlalchemy
 flask_testing
+xml.etree.ElementTree
 psycopg2
