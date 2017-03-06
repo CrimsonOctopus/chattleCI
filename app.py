@@ -9,9 +9,10 @@ import json
 import requests
 import urllib
 import xml.etree.ElementTree as ET
-
-app = flask.Flask(__name__)
 import models
+app = flask.Flask(__name__)
+
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 #Get the flask_socketio socket
 socketio = flask_socketio.SocketIO(app)
