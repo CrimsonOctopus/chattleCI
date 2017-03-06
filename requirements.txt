@@ -1,5 +1,5 @@
 Flask==0.12
-flask-socketio==2.8.2
+flask-socketio
 requests==2.13.0
 flask_sqlalchemy==2.1
 flask_testing
