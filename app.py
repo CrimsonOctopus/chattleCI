@@ -9,8 +9,9 @@ import json
 import requests
 import urllib
 import xml.etree.ElementTree as ET
-import models
+
 app = flask.Flask(__name__)
+import models
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
