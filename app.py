@@ -187,12 +187,12 @@ def parseWithChatty(message, apiKey):
     username, messageString = message.split(",.,",2)
     text = ""
     if messageString[:2]=="!!":
-        print "Checking ForCommands: "+messageString[2:]
         args = messageString.split(" ")
+        print "Checking ForCommands: "+args[1]
         if args[1]=="help":
             print "Found help command"
             text = "\bCommands:\n\t-about\n\t-say 'message to say'\n\t-saySpecial '\\tThis line will be italic\\n\\bAnd this one will be bold!\\n'\n\t-translate [FromLangCode] [ToLangCode] 'message to translate and say'\n\t-translateFreq [FromLangCode] [ToLangCode]\n\b2-Letter Language Codes:\nen(glish), es(panol), fr(ench), it(alian), tl(tagalog),de(german)"
-        if args[1]=="about":
+        elif args[1]=="about":
             print "Found about command"
             text = "\bAbout Chattle:\nChattle is a fun and inviting chatroom that encourages individuals to expand their language boundaries by discovering their most frequently used words in foreign languages."
         elif args[1]=="translate":
