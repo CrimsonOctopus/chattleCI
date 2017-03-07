@@ -61,7 +61,7 @@ def on_user_connect(data):
         #Send the username up with the message marker >>
         serverMessage = parseWithChatty(user['text'] + ",.," + ">> "+text,"")
         #If the message had markers (It did), append the server message to the message list
-        if messages is not None and serverMessage is not None:
+        if serverMessage is not None:
             messages.append(json.dumps(serverMessage))
             
         #Emit the new list of messages to all the clients
@@ -188,7 +188,7 @@ def parseWithChatty(message, apiKey):
     text = ""
     if messageString[:2]=="!!":
         args = messageString.split(" ")
-        print "Checking ForCommands: "+args[1]
+        print "Checking ForCommands: '"+args[1]+"'"
         if args[1]=="help":
             print "Found help command"
             text = "\bCommands:\n\t-about\n\t-say 'message to say'\n\t-saySpecial '\\tThis line will be italic\\n\\bAnd this one will be bold!\\n'\n\t-translate [FromLangCode] [ToLangCode] 'message to translate and say'\n\t-translateFreq [FromLangCode] [ToLangCode]\n\b2-Letter Language Codes:\nen(glish), es(panol), fr(ench), it(alian), tl(tagalog),de(german)"
